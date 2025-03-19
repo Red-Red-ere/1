@@ -19,12 +19,13 @@ void fib_1(int n) {
 }
 
 int main() {
+    setlocale(LC_ALL, "RUS");
     cout << "Hello, Word!" << endl;
     int n;
     cout << "n:";
     cin >> n;
     cout << "fib(" << n << ") = " << fib(n) << endl;
     cout << "Первые " << n << " чисел Фибоначчи" << endl;
-    fib_1;
+    fib_1(n);
     return 0;
 }
